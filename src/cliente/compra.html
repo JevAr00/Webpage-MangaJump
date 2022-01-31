@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>MangaCR</title>
+        <!--<link rel="stylesheet" href="css/compra.css" />-->
+        <!--icono del carro-->
+        <!-- font awesome -->
+        <!--<link rel="stylesheet" href="css/all.css">-->
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">MangaJump</a>
+            <nav>
+                <ul>
+                    <li><a href="catalogo.html"><strong>Catalogo</strong></a></li>
+                    <li><a href="compra.html"><strong>¿Como comprar?</strong></a></li>
+                    <li><a href="informacion.html"><strong>¿Quienes somos?</strong></a></li>
+                    <div id ="cart-info" class = "nav-info cart-info" >
+                        <li><a href="formCompra.html"><span class = "cart-info__icon"><i class="fas fa-shopping-cart"></i></span></a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <h1></h1>
+            <div id = "caja1" class="contenedor">
+                <h2>Proceso de Compra</h2>
+                <p>
+                    La compra se solicita por medio de la pagina</br>
+                    recibiras un mensaje al numero que proporcionaste.
+                </p>
+                <p>
+                    Tambien puedes realizar tus consultas sobre</br>
+                    disponibilidad o realizar solicitud de pedidos</br>
+                    de mangas que no se encuentren en la pagina.</br> 
+                </p>
+            </div>
+            <div id = "caja2" class="contenedor">
+                <h2>Opciones de Retiro</h2>
+                <p>
+                    <strong>Tienda Fisica</strong></br>
+                    De lunes a viernes de 7:30 a.m a 5:30 p.m </br>
+                    Ubicados al costado oeste del parque de Grecia, Alajuela
+                </p>
+                <p>
+                    <strong>Envio de paquete</strong></br>
+                    Por Correos de Costa Rica a traves de EMS</br>
+                    Recibe tu paquete en 2 o 3 dias habiles.
+                </p>
+            </div>
+            <div id = "caja3" class="contenedor">
+                <h2>Metodos de pago</h2>
+                <p>
+                    Puedes realizar tu pago por deposito bancario</br>
+                    o transferencia electronica.
+                </p>
+                <p>
+                    Tambien puedes realizar tu pago</br>a traves de simpe movil.
+                </p>
+                <p>
+                    <strong>Cuando realices tu compra se te brindaran los</br>
+                    numeros de cuenta correspondientes.</strong>
+                </p>
+            </div>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <div class="clearfix"></div>
+        <footer>MangaJump® - 2021 - © Kevin Arias</footer>
+    </body>
+
+</html>

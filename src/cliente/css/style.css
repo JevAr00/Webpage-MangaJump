@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aref Ruqaa', serif;
+}
+
+body
+{
+    background:#fff;
+    min-height: 200vh;
+}
+
+/*#region Barra*/
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 25px 40px;
+    z-index: 100000;
+}
+
+/*la linea blanca*/
+header.sticky
+{
+    padding: 20px 100px;
+    background: #fff;
+}
+
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700px;
+    font-size: 25px;
+    transition: 0.6s;
+}
+
+.cart-info__icon {
+    font-size: 30px;
+}
+
+
+header ul li i
+{
+    padding-left: 20px;
+    color: white;
+    transition: 0.6s;
+}
+
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 320vh;
+    background: url('http://localhost:3000/static/imagenes/bgindex.jpg'),url('http://localhost:3000/static/imagenes/bgindex2.jpg') right center,url('http://localhost:3000/static/imagenes/bgindex3.png') right bottom ;
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-size: 1920px 1080px,1920px 1080px,1920px 1080px ;
+}
+
+header.sticky .logo
+{
+    color: #000;
+}
+
+header.sticky ul li a 
+{
+    color: #000;
+}
+
+header.sticky ul li i 
+{
+    padding-left: 35px;
+    color: #000;
+}
+
+/*#endregion Barra*/
+
+
+#titulo1
+{
+    color: #fff;
+    padding-top: 90px;
+    padding-left: 290px;
+    font-size: 70px;
+}
+
+#titulo2
+{
+    color: #fff;
+    margin-top: 90px;
+    margin-left: 30px;
+    font-size: 70px;
+}
+
+#titulo3
+{
+    color: #fff;
+    margin-top: 80px;
+    margin-left: 1300px;
+    font-size: 60px;
+}
+
+/*#region stylecaja*/
+
+.contenedor{
+    width: 550px;
+    height: 350px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.contenedor img
+{
+    margin-top: 25px;
+    margin-left: 20px ;
+    width: 200px;
+    height: 300px;
+}
+
+.contenedor h2
+{ 
+    margin-top: -295px;
+    margin-left: 250px;
+    font-size: 32px;
+}
+
+.contenedor p
+{
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 20px;
+}
+/*#endregion stylecaja*/
+
+/*#region cajas*/
+chainsaw #caja1
+{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+chainsaw #caja2
+{
+    margin-top: -350px;
+    margin-left: 1200px;
+}
+
+chainsaw #caja3
+{
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+chainsaw #caja4
+{
+    margin-top: -335px;
+    margin-left: 1150px;
+}
+
+jujutsu #caja1
+{
+    margin-top:  -980px;
+    margin-left: 800px;
+}
+
+jujutsu #caja2
+{
+    margin-top:  -70px;
+    margin-left: 1280px;
+}
+
+jujutsu #caja3
+{
+    margin-top:  -160px;
+    margin-left: 510px;
+}
+
+jujutsu #caja4
+{
+    margin-top:  -120px;
+    margin-left: 1000px;
+}
+
+monogatari #caja1
+{
+    margin-top:  -250px;
+    margin-left: 420px;
+}
+
+monogatari #caja2
+{
+    margin-top:  5px;
+    margin-left: 225px;
+}
+
+monogatari #caja3
+{
+    margin-top:  5px;
+    margin-left: 30px;
+}
+
+/*#endregion cajas*/
+
+.clearfix{
+    clear: both;
+}
+
+footer{
+    background: #fff;
+    color:black;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}

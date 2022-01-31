@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>MangaCR</title>
+        
+        <!--<link rel="stylesheet" href="css/style.css" />-->
+
+        <!--icono del carro-->
+        <!-- font awesome -->
+        <!--<link rel="stylesheet" href="css/all.css">-->
+
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">MangaJump</a>
+            <nav>
+                <ul>
+                    <li><a href="catalogo.html"><strong>Catalogo</strong></a></li>
+                    <li><a href="compra.html"><strong>¿Como comprar?</strong></a></li>
+                    <li><a href="informacion.html"><strong>¿Quienes somos?</strong></a></li>
+                    <div id ="cart-info" class = "nav-info cart-info" >
+                        <li><a href="formCompra.html"><span class = "cart-info__icon"><i class="fas fa-shopping-cart"></i></span></a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <h1 id = "titulo1">Destacados</h1>
+            <chainsaw>
+                <div id="caja1" class="contenedor">
+                    <img src="/static/imagenes/ChainMan/ChainMan1.png">
+                    <h2 id = "nombre">Chainsaw Man</h2>
+                    <p id = "nmanga">Manga #1</br></p>
+                    <p id = "precio">Precio: ₡5500</p>
+                </div>
+                <div id="caja2" class="contenedor">
+                    <img src="/static/imagenes/ChainMan/ChainMan2.png">
+                    <h2>Chainsaw Man</h2>
+                    <p>Manga #2</br>Precio: ₡5800</p>
+                </div>
+                <div id="caja3" class="contenedor">
+                    <img src="/static/imagenes/ChainMan/ChainMan3.png">
+                    <h2>Chainsaw Man</h2>
+                    <p>Manga #3</br>Precio: ₡5200</p>
+                </div>
+                <div id="caja4" class="contenedor">
+                    <img src="/static/imagenes/ChainMan/ChainMan4.png">
+                    <h2>Chainsaw Man</h2>
+                    <p>Manga #4</br>Precio: ₡6000</p>
+                </div>
+            </chainsaw>
+            <h1 id = "titulo2">N</br>o</br>v</br>e</br>d</br>a</br>d</br>e</br>s</h1>
+            <jujutsu>
+                <div id="caja1" class="contenedor">
+                    <img src="/static/imagenes/Jujutsu/jujutsu1.png">
+                    <h2>Jujutsu Kaisen</h2>
+                    <p>Manga #1</br>Precio: ₡5500</p>
+                </div>
+                <div id="caja2" class="contenedor">
+                    <img src="/static/imagenes/Jujutsu/jujutsu2.png">
+                    <h2>Jujutsu Kaisen</h2>
+                    <p>Manga #2</br>Precio: ₡5200</p>
+                </div>
+                <div id="caja3" class="contenedor">
+                    <img src="/static/imagenes/Jujutsu/jujutsu3.png">
+                    <h2>Jujutsu Kaisen</h2>
+                    <p>Manga #3</br>Precio: ₡5000</p>
+                </div>
+                <div id="caja4" class="contenedor">
+                    <img src="/static/imagenes/Jujutsu/jujutsu4.png">
+                    <h2>Jujutsu Kaisen</h2>
+                    <p>Manga #4</br>Precio: ₡5700</p>
+                </div>
+            </jujutsu>
+            <h1 id = "titulo3">Recomendacion</br>Mensual</h1>
+            <monogatari>
+                <div id="caja1" class="contenedor">
+                    <img src="/static/imagenes/monogatari/bake1.png">
+                    <h2>Bakemonogatari</h2>
+                    <p>Manga #1</br>Precio: ₡5800</p>
+                </div>
+                <div id="caja2" class="contenedor">
+                    <img src="/static/imagenes/monogatari/bake2.png">
+                    <h2>Bakemonogatari</h2>
+                    <p>Manga #2</br>Precio: ₡6200</p>
+                </div>
+                <div id="caja3" class="contenedor">
+                    <img src="/static/imagenes/monogatari/bake3.png">
+                    <h2>Bakemonogatari</h2>
+                    <p>Manga #3</br>Precio: ₡6000</p>
+                </div>
+            </monogatari>
+        </section>
+        <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        </script>
+
+        <div class="clearfix"></div>
+        <footer>MangaJump® - 2021 - © Kevin Arias</footer>
+    </body>
+
+</html>

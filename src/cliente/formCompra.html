@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>MangaCR</title>
+        <!--<link rel="stylesheet" href="css/formCompra.css" />-->
+
+        <!--icono del carro-->
+        <!-- font awesome -->
+        <!--<link rel="stylesheet" href="css/all.css">-->
+
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">MangaJump</a>
+            <nav>
+                <ul>
+                    <li><a href="catalogo.html"><strong>Catalogo</strong></a></li>
+                    <li><a href="compra.html"><strong>¿Como comprar?</strong></a></li>
+                    <li><a href="informacion.html"><strong>¿Quienes somos?</strong></a></li>
+                    <div id ="cart-info" class = "nav-info cart-info" >
+                        <li><a href="formCompra.html"><span class = "cart-info__icon"><i class="fas fa-shopping-cart"></i></span></a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <h1></h1>
+                <div id = "caja1" class="contenedor">
+                    <h2>Solicitar compra</h2>
+                    <p>
+                        Gracias por preferirnos</br>
+                        brindanos la informacion solicitada</br>
+                        a continuacion para comunicarnos contigo.
+                    </p>
+                    <form>
+                        <h3 id="nombre">Nombre:</br></h3>
+                        <div class="input-contenedor">
+                            <input id="txtNombre" class="input" name="nombre" type="text" required>
+                        </div>
+                        <h3 id="apellido">Apellidos:</br></h3>
+                        <div class="input-contenedor">
+                            <input id="txtApellido" class="input" name="apellidos" type="text" required>
+                        </div>
+                        <h3 id="phone">Telefono:</br></h3>
+                        <div class="input-contenedor" >
+                            <input id="txtNumero" class="input" name="telefono" type="text" required>
+                        </div>
+                        <h3 id="correo">Correo:</br></h3>
+                        <div class="input-contenedor" >
+                            <input id="txtCorreo" class="input" type="email" required>
+                        </div>
+                        <h3 id="dir">Direccion (en caso de envio):</br></h3>
+                        <textarea id="txtDireccion" name="direccion"></textarea>
+                        </br>
+                        <button id="btnEnviar"><p>Enviar</p></button>
+                    </form>
+                    <p id="info">
+                        ¡No te preocupes!</br>
+                        La informacion brindada es confidencial</br>
+                        tampoco enviaremos spam a tu bandeja de correo.
+                    </p>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        </script>
+
+        <div class="clearfix"></div>
+        <footer>MangaJump® - 2021 - © Kevin Arias</footer>
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>MangaCR</title>
+        <!--<link rel="stylesheet" href="css/catalogo.css" />-->
+
+        <!--icono del carro-->
+        <!-- font awesome -->
+        <!--<link rel="stylesheet" href="css/all.css">-->
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">MangaJump</a>
+            <nav>
+                <ul>
+                    <li><a href="catalogo.html"><strong>Catalogo</strong></a></li>
+                    <li><a href="compra.html"><strong>¿Como comprar?</strong></a></li>
+                    <li><a href="informacion.html"><strong>¿Quienes somos?</strong></a></li>
+                    <div id ="cart-info" class = "nav-info cart-info" >
+                        <li><a href="formCompra.html"><span class = "cart-info__icon"><i class="fas fa-shopping-cart"></i></span></a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <h1>Mmmmmm.....</h1>
+            <h2>Parece que el programador no ha terminado esta pagina.</br>Lamentamos los inconvenientes</h2>
+            <p>Cuidado con el codigo suelto al cambiar de pestaña</p>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <div class="clearfix"></div>
+        <footer>MangaJump® - 2021 - © Kevin Arias</footer>
+    </body>
+
+</html>
